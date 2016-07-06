@@ -1,0 +1,10 @@
+# --- main configuration -------------------------------------------
+
+baseurl		 	    = "https://flashpixx.github.io/"
+metadataformat		= "yaml"
+languageCode 	    = "de-DE"
+theme 			    = "heather-hugo"
+# see http://www.emoji-cheat-sheet.com/
+enableEmoji         = true
+
+# ----------------------------------------------------------------------

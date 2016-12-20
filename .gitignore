@@ -9,6 +9,7 @@
 !*.bib
 !*.css
 !*.js
+!*.svg
 
 # ignore generated files
 public/**

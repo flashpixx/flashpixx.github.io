@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{- .Site.LanguageCode -}}">
+
+<head>
+	<meta  charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.9" />
+	{{- with .Site.Params.description -}}
+		<meta name="description" content="{{- . -}}">
+	{{- end -}}
+
+	<link href="/news/index.xml" rel="alternate" type="application/rss+xml" title="{{- .Site.Params.name -}}" />
+	<link href="/news/index.xml" rel="feed" type="application/rss+xml" title="{{- .Site.Params.name -}}" />	
+	<title>{{- if not .IsHome -}}{{- .Title -}} &mdash;{{- end -}} {{- .Site.Params.name -}}</title>
+	
+	<link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+	<script type="text/javascript" src="{{ .Site.BaseURL }}prism.js"></script>
+	<script type="text/javascript" src="{{ .Site.BaseURL }}prism-agentspeak.js"></script>
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}prism.css" />
+
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}lightbox.min.css" type="text/css" />
+	
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}layout.css" type="text/css" />
+	<link rel="shortcut icon" href="{{ $.Site.BaseURL }}favicon.ico" type="image/x-icon"/>
+
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  			tex2jax: {
+    			inlineMath: [['$','$']],
+    			displayMath: [['$$','$$']],
+    			processEscapes: true,
+    			processEnvironments: false,
+    			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    			TeX: { equationNumbers: { autoNumber: "AMS" }, extensions: ["autoload-all.js"] }
+  			}
+		});
+	</script>
+
+	<script type="text/javascript" src="{{ .Site.BaseURL }}jquery-3.1.0.min.js"></script>
+</head>
+
+<body>

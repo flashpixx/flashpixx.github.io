@@ -1,0 +1,11 @@
+{{- if and (ne .Site.Params.socialmedia nil) (gt (len .Site.Params.socialmedia) 0) -}}
+
+<div id="socialmedia">
+    <ul class="horizontal">
+        {{- range sort .Site.Params.socialmedia "weight" }}
+        <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" class="socialmedia"></a></li>
+        {{- end -}}
+    </ul>    
+</div>
+
+{{- end -}}

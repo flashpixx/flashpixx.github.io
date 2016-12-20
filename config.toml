@@ -1,10 +1,65 @@
 # --- main configuration -------------------------------------------
+# see http://www.emoji-cheat-sheet.com/
 
 baseurl		 	    = "https://flashpixx.github.io/"
 metadataformat		= "yaml"
-languageCode 	    = "de-DE"
-theme 			    = "heather-hugo"
-# see http://www.emoji-cheat-sheet.com/
+languageCode 	    = "en-EN"
+theme 			    = "flashpixx"
 enableEmoji         = true
+
+# ----------------------------------------------------------------------
+
+
+
+# --- main site configuration ------------------------------------------
+
+[taxonomies]
+	news        	= "news"
+
+[params]
+	listpages		= ["news"]  
+	name 		    = "flashpixx.de"
+	description		= ""
+
+# ----------------------------------------------------------------------
+
+
+
+# --- social-media -----------------------------------------------------
+
+[[params.socialmedia]]
+	name		= "mail"
+	url         = "mailto:philipp.kraus [AT] flashpixx [DOT] de"
+	weight		= 0
+
+[[params.socialmedia]]
+	name		= "github"
+	url	        = "http://github.com/flashpixx"	
+	weight		= 10
+
+[[params.socialmedia]]
+	name		= "linkedin"
+	url 		= "http://www.linkedin.com/in/philipp-kraus"	
+	weight		= 20
+
+[[params.socialmedia]]
+	name		= "xing"
+	url         = "http://xing.to/philippkraus"			
+	weight		= 30		
+
+[[params.socialmedia]]		
+	name		= "twitter"
+	url			= "http://twitter.com/flashpixx"
+	weight		= 40
+
+[[params.socialmedia]]
+	name 		=  "facebook"
+	url 		= "https://www.facebook.com/philipp.kraus"
+	weight		= 50
+
+[[params.socialmedia]]
+	name		= "googleplus"
+	url	        = "https://plus.google.com/116548835083550863516"
+	weight		= 60
 
 # ----------------------------------------------------------------------

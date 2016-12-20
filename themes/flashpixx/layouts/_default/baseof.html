@@ -1,0 +1,14 @@
+{{ partial "header" . -}} 
+
+<div id="header">
+	{{- partial "title" . -}}
+	{{- partial "socialmedia" . -}}
+	{{- partial "menu" . -}} 	
+</div>	
+
+<div id="document"> 
+	<h1><a name="root">{{ if not .IsHome -}}{{ .Title }}{{- end }}</a></h1>
+	{{ block "main" . -}}{{- end }} 
+</div>
+
+{{ partial "footer" . -}} 

@@ -36,7 +36,7 @@ test:
         - mv -f /tmp/public/* .
         - echo -e 'general:\n    branches:\n        ignore:\n            - master\n' > circle.yml
         - echo -e '*.*\n!.gitignore\n!circle.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.json\n!*.bib\n!*.zip\n!*.png\n!*.pdf\n!*.svg\n' > .gitignore
-        - echo '# LightJason' > readme.md
+        - echo '# flashpixx.de' > readme.md
         - git add --all .
         - git commit -m "current website"
         - git push origin master

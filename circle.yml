@@ -1,0 +1,42 @@
+general:
+    branches:
+        only:
+            - developing
+        ignore:
+            - master
+            - /hotfix-.*/
+            - /release-.*/
+            - /support-.*/
+            - /dev-.*/
+
+machine:
+    timezone:
+        Europe/Berlin
+
+    environment:
+        GIT_AUTHOR_NAME: CircleCI
+        GIT_AUTHOR_EMAIL: info@flashpixx.de
+        GIT_COMMITTER_NAME: CircleCI
+        GIT_COMMITTER_EMAIL: info@flashpixx.de
+
+dependencies:
+    pre:
+        # see release version https://github.com/spf13/hugo/releases
+        - wget https://github.com/spf13/hugo/releases/download/v0.16/hugo_0.16-1_amd64.deb
+        - sudo dpkg -i hugo_0.16-1_amd64.deb
+
+test:
+    override:
+        - hugo
+        - mv -f public /tmp
+        - git push origin :master
+        - git fetch -p        
+        - git checkout --orphan master
+        - rm -Rf *
+        - mv -f /tmp/public/* .
+        - echo -e 'general:\n    branches:\n        ignore:\n            - master\n' > circle.yml
+        - echo -e '*.*\n!.gitignore\n!circle.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.json\n!*.bib\n!*.zip\n!*.png\n!*.pdf\n!*.svg\n' > .gitignore
+        - echo '# LightJason' > readme.md
+        - git add --all .
+        - git commit -m "current website"
+        - git push origin master

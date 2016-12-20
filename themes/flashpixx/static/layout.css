@@ -5,17 +5,29 @@ body {
 
 #title
 {
+    width: 100%;
+    margin: 0;
 	font-size: 300%;
 	text-align: center;
 }
 
 #socialmedia
 {
+    width: 100%;
+    margin: 0;
 	text-align: center;
 }
 
+#document
+{
+    width: 100%;
+    margin: 0;    
+    text-align: justify;
+}
+
 #footer {
-    margin: 20px auto 30px auto;
+    width: 100%;
+    margin: 0;
     font-size: 14px;
     text-align: right;
 }

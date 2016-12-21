@@ -1,6 +1,5 @@
 ---
 title: "Projekte"
-anchor: "projekte"
 weight: 10
 ---
 ## Dissertation

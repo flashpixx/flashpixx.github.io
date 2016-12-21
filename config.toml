@@ -9,6 +9,7 @@ metadataformat		= "yaml"
 languageCode 	    = "de-DE"
 theme 			    = "flashpixx"
 enableEmoji         = true
+googleAnalytics		= "UA-4509379-1"
 
 # ----------------------------------------------------------------------
 

@@ -8,6 +8,7 @@
 		<meta name="description" content="{{- . -}}">
 	{{- end -}}
 
+	{{ template "_internal/google_analytics.html" . }}
 	<link rel="shortcut icon" href="{{ $.Site.BaseURL }}favicon.ico" type="image/x-icon"/>
 	<link href="/news/index.xml" rel="alternate" type="application/rss+xml" title="{{- .Site.Params.name -}}" />
 	<link href="/news/index.xml" rel="feed" type="application/rss+xml" title="{{- .Site.Params.name -}}" />	

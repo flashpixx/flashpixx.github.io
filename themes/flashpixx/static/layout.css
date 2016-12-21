@@ -6,12 +6,12 @@ body {
 }
 
 a {
-    color: #3782BE;
+    color: #3790BE;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #3782BE;
+    color: #3790BE;
     text-decoration: underline;
 }
 
@@ -44,14 +44,13 @@ svg {
     margin: 0 auto;
 }
 
-img[src$='#centering'] {
-    display: block;
-    padding: 5px;
-    margin: 0 auto;
+img
+{
+    vertical-align: middle;
 }
 
-img[src$='#floatcentering'] {
-    display: inline-block;
+img[src$='#centering'] {
+    display: block;
     padding: 5px;
     margin: 0 auto;
 }

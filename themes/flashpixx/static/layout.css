@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato";
+    font-family: Lato, Helvetica, sans-serif;
 	font-size: 18px;
     background: #fff;
     color: #000;
@@ -99,7 +99,7 @@ ul.horizontal li {
 
 #menu
 {
-    font-size: 85%;    
+    font-size: 90%;    
 }
 
 #generatedate

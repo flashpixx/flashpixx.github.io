@@ -1,9 +1,12 @@
 # --- main configuration -------------------------------------------
 # see http://www.emoji-cheat-sheet.com/
 
+# https://projects.lukehaas.me/scrollify/examples/apple/#design
+# http://www.kirichik.com/
+
 baseurl		 	    = "https://flashpixx.github.io/"
 metadataformat		= "yaml"
-languageCode 	    = "en-EN"
+languageCode 	    = "de-DE"
 theme 			    = "flashpixx"
 enableEmoji         = true
 

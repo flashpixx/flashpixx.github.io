@@ -1,0 +1,24 @@
+<section class="content" id="content_root" data-section-name="page_root">
+<div id="headline">
+    <span id="title">{{- .Site.Params.name -}}</span>
+
+    {{- if and (ne .Site.Params.socialmedia nil) (gt (len .Site.Params.socialmedia) 0) -}}
+    <span id="socialmedia">
+        <ul class="horizontal">
+            {{- range sort .Site.Params.socialmedia "weight" }}
+            <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" class="socialmedia"></a></li>
+            {{- end -}}
+        </ul>    
+    </span>
+    {{- end -}}
+
+    <span id="menu">
+        <ul class="horizontal">
+            {{- range .Site.Pages -}}
+            <li><a class="menulink" href="#page_{{- .Title | lower | safeCSS -}}">{{- .Title -}}</a></li>
+            {{- end -}}
+        </ul>    
+    </span>
+</div>
+<span id="generatedate">{{ .Now.Format "Jan 2006" -}}</span>
+</section>

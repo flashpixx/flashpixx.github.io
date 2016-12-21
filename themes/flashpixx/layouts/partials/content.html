@@ -1,0 +1,6 @@
+{{- range .Site.Pages -}}
+	<section id="content_{{- .Title | lower | safeCSS -}}" class="content" data-section-name="page_{{- .Title | lower | safeCSS -}}">
+	<h1>{{- .Title -}}</h1>
+	{{- .Content -}}
+	</section>
+{{- end -}}

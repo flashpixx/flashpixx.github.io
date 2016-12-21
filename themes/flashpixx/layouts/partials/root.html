@@ -15,7 +15,7 @@
     <span id="menu">
         <ul class="horizontal">
             {{- range .Site.Pages -}}
-            {{- $id := replaceRE "[[:^alpha:]]" "" (.Title | lower) | safeCSS -}}
+            {{- $id := replaceRE "[[:^alnum:]]" "" (.Title | lower) | safeCSS -}}
             <li><a class="menulink" href="#page_{{- $id -}}">{{- .Title -}}</a></li>
             {{- end -}}
         </ul>    

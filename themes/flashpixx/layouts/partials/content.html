@@ -1,5 +1,5 @@
 {{- range .Site.Pages -}}
-	{{- $id := replaceRE "[[:^alpha:]]" "" (.Title | lower) | safeCSS -}}
+	{{- $id := replaceRE "[[:^alnum:]]" "" (.Title | lower) | safeCSS -}}
 	<section id="content_{{- $id -}}" class="content" data-section-name="page_{{- $id -}}">
 	<h1>{{- .Title -}}</h1>
 	{{- .Content -}}

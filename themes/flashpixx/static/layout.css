@@ -15,7 +15,7 @@ a:hover {
     text-decoration: underline;
 }
 
-h1 { font-size: 200%; }
+h1 { font-size: 200%; border-bottom: 2px solid #ddd; }
 h2 { font-size: 170%; }
 h3 { font-size: 150%; }
 h4 { font-size: 130%; }

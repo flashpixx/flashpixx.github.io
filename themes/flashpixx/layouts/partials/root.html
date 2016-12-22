@@ -2,15 +2,14 @@
 <div class="content_data">
     <span id="title">{{- .Site.Params.name -}}</span>
 
-    {{- if and (ne .Site.Params.socialmedia nil) (gt (len .Site.Params.socialmedia) 0) -}}
     <span id="socialmedia">
         <ul class="horizontal">
             {{- range sort .Site.Params.socialmedia "weight" }}
-            <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" class="socialmedia"></a></li>
+            <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" class="socialmedia" /></a></li>
             {{- end -}}
+            <li><a href="/news/index.xml"><img src="/images/rss.svg" class="socialmedia" /></a></li>
         </ul>    
     </span>
-    {{- end -}}
 
     <span id="menu">
         <ul class="horizontal">

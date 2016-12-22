@@ -95,9 +95,10 @@ ul.horizontal li {
 #generatedate
 {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0.25em;
+    right: 0.5em;
     color: #999;
+    font-size: 85%;
 }
 
 .socialmedia
@@ -129,4 +130,24 @@ ul.horizontal li {
 .footnotes
 {
 	font-size: 75%;
+}
+
+@media print
+{
+    #generatedate
+    {
+        display: none;
+    }
+
+    section
+    {
+        page-break-after: always;
+    }
+
+    .content_data
+    {
+        height: auto;
+        page-break-after: avoid; 
+        overflow: hidden;
+    }
 }

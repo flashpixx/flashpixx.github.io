@@ -5,15 +5,20 @@
     <span id="socialmedia">
         <ul class="horizontal">
             {{- range sort .Site.Params.socialmedia "weight" }}
-            <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" class="socialmedia" /></a></li>
+            <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" alt="{{- .name -}}" class="socialmedia" /></a></li>
             {{- end -}}
-            <li><a href="/news/index.xml"><img src="/images/rss.svg" class="socialmedia" /></a></li>
+            <li><a href="/news/index.xml"><img src="/images/rss.svg" alt="rss" class="socialmedia" /></a></li>
         </ul>    
     </span>
 
     <span id="menu">
         <ul class="horizontal">
-            {{- range .Site.Pages -}}
+            {{- range $name, $taxonomy := .Site.Taxonomies -}}
+            {{- $id := replaceRE "[[:^alnum:]]" "" ($name | lower) | safeCSS -}}
+            <li><a class="menulink" href="#page_{{- $id -}}">{{- $name | humanize -}}</a></li>
+            {{- end -}}
+
+            {{- range where .Site.Pages "Type" "static" -}}
             {{- $id := replaceRE "[[:^alnum:]]" "" (.Title | lower) | safeCSS -}}
             <li><a class="menulink" href="#page_{{- $id -}}">{{- .Title -}}</a></li>
             {{- end -}}

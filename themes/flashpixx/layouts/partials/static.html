@@ -1,4 +1,4 @@
-{{- range .Site.Pages -}}
+{{- range where .Site.Pages "Type" "static" -}}
 	{{- $id := replaceRE "[[:^alnum:]]" "" (.Title | lower) | safeCSS -}}
 	<section id="content_{{- $id -}}" class="content" data-section-name="page_{{- $id -}}">
 	<div class="content_data">	

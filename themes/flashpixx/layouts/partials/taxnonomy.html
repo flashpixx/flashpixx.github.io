@@ -1,0 +1,8 @@
+{{- range $name, $taxonomy := .Site.Taxonomies -}}
+	{{- $id := replaceRE "[[:^alnum:]]" "" ($name | lower) | safeCSS -}}
+	<section id="content_{{- $id -}}" class="content" data-section-name="page_{{- $id -}}">
+	<div class="content_data">	
+	<h1>{{- $name | humanize -}}</h1>
+	</div>
+	</section>
+{{- end -}}

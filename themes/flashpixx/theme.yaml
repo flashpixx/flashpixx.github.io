@@ -1,0 +1,10 @@
+name         : "Flashpixx"
+license      : "LGPL"
+licenselink  : "https://www.gnu.org/licenses/lgpl-3.0.en.html"
+description  : "A documentation theme"
+tags         : ["documentation"]
+features     : []
+min_version  : 0.16
+author
+    name     : "Philipp Kraus"
+    homepage : "http://flashpixx.de"

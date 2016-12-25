@@ -19,7 +19,7 @@
             {{- end -}}
 
             {{- range where .Site.Pages "Type" "static" -}}
-            {{- $id := replaceRE "[[:^alnum:]]" "" (.Title | lower) | safeCSS -}}
+            {{- $id := replaceRE "[[:^alnum:]]" "" (.File.BaseFileName | lower) | safeCSS -}}
             <li><a class="menulink" href="#page_{{- $id -}}">{{- .Title -}}</a></li>
             {{- end -}}
         </ul>    

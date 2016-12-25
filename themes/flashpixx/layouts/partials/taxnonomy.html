@@ -7,7 +7,12 @@
 	<h1>{{- $name | humanize -}}</h1>
 	
 	{{- range where $.Site.Pages ".Section" "eq" $section -}}
-	<div class="post">{{- .Content -}}</div>
+	<div class="post">
+	{{- if not .Date.IsZero -}}
+	<strong>{{- .Date.Format "Mon, Jan 2, 2006" }}</strong> 
+	{{- end -}}
+	{{- .Content -}}
+	</div>
 	{{- end -}}
 
 	</div>

@@ -7,7 +7,7 @@
 	<h1>{{- $name | humanize -}}</h1>
 	
 	{{- range where $.Site.Pages ".Section" "eq" $section -}}
-	<fiv class="post">{{- .Content -}}</div>
+	<div class="post">{{- .Content -}}</div>
 	{{- end -}}
 
 	</div>

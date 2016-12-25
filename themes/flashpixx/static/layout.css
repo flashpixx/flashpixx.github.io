@@ -101,6 +101,11 @@ ul.horizontal li {
     font-size: 85%;
 }
 
+.post
+{
+    display:list-item;
+}
+
 .socialmedia
 {
 	width: 40px;

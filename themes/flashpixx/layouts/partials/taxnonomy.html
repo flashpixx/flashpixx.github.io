@@ -1,19 +1,14 @@
 {{- range $name, $taxonomy := .Site.Taxonomies -}}
 	{{- $id := replaceRE "[[:^alnum:]]" "" ($name | lower) | safeCSS -}}
+	{{- $section := $name | singularize -}}
+
 	<section id="content_{{- $id -}}" class="content" data-section-name="page_{{- $id -}}">
 	<div class="content_data">	
 	<h1>{{- $name | humanize -}}</h1>
-
-	<ul>
-		{{ range $key, $value := $taxonomy }}
-		<li> {{ $key }} </li>
-			<ul>
-			{{ range $value.Pages }}
-				<li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-			{{ end }}
-			</ul>
-		{{ end }}
-    </ul>
+	
+	{{- range where $.Site.Pages ".Section" "eq" $section -}}
+	<fiv class="post">{{- .Content -}}</div>
+	{{- end -}}
 
 	</div>
 	</section>

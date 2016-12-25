@@ -10,7 +10,7 @@ googleAnalytics		: "UA-4509379-1"
 
 taxonomies:
     news			: "news"
-    projekt 		: "projekte"
+    project 		: "projects"
 
 params:
     name 			: "flashpixx.de"

@@ -6,7 +6,7 @@
 	<div class="content_data">	
 	<h1>{{- $name | humanize -}}</h1>
 	
-	{{- range where $.Site.Pages ".Section" "eq" $section -}}
+	{{- range sort (where $.Site.Pages ".Section" "eq" $section) ".Date" "desc" -}}
 	<div class="post">
 	{{- if not .Date.IsZero -}}
 	<strong>{{- .Date.Format "Mon, Jan 2, 2006" }}</strong> 

@@ -1,48 +1,54 @@
 # --- main configuration -------------------------------------------
 # see http://www.emoji-cheat-sheet.com/
 
-baseurl		 	    : "https://flashpixx.github.io/"
-metadataformat		: "yaml"
-languageCode 	    : "de-DE"
-theme 			    : "flashpixx"
-enableEmoji         : true
-googleAnalytics		: "UA-4509379-1"
+baseurl		 	       : "https://flashpixx.github.io/"
+metadataformat		   : "yaml"
+defaultContentLanguage : "de-DE"     
+theme 			       : "flashpixx"
+title                  : "flashpixx.de"
+enableEmoji            : true
+googleAnalytics		   : "UA-4509379-1"
+
+permalinks:
+    news               : "/:section/:filename"
+    projekt            : "/:section/:filename" 
 
 taxonomies:
-    news			: "news"
-    project 		: "projects"
+    news               : "news"
+    projekt            : "projekte"
+
 
 params:
-    name 			: "flashpixx.de"
-    description 	: ""
-    socialmedia 	:
+    name 			   : "flashpixx.de"
+    description 	   : ""
+    socialmedia 	   :
         -
-            name	: "mail"
-            url     : "mailto:philipp.kraus [AT] flashpixx [DOT] de"
-            weight	: 0
+            name	   : "mail"
+            url        : "mailto:philipp.kraus [AT] flashpixx [DOT] de"
+            weight	   : 0
         -
-            name	: "github"
-            url	    : "http://github.com/flashpixx"
-            weight	: 10
+            name	   : "github"
+            url	       : "http://github.com/flashpixx"
+            weight	   : 10
         -
-            name	: "linkedin"
-            url 	: "http://www.linkedin.com/in/philipp-kraus"
-            weight	: 20
+            name	   : "linkedin"
+            url 	   : "http://www.linkedin.com/in/philipp-kraus"
+            weight	   : 20
         -
-            name	: "xing"
-            url     : "http://xing.to/philippkraus"
-            weight	: 30
+            name	   : "xing"
+            url        : "http://xing.to/philippkraus"
+            weight	   : 30
         -
-            name	: "twitter"
-            url		: "http://twitter.com/flashpixx"
-            weight	: 40
+            name	   : "twitter"
+            url		   : "http://twitter.com/flashpixx"
+            weight	   : 40
         -
-            name 	:  "facebook"
-            url 	: "https://www.facebook.com/philipp.kraus"
-            weight	: 50
+            name 	   :  "facebook"
+            url 	   : "https://www.facebook.com/philipp.kraus"
+            weight	   : 50
         -
-            name	: "googleplus"
-            url	    : "https://plus.google.com/116548835083550863516"
-            weight	: 60
+            name	   : "googleplus"
+            url	       : "https://plus.google.com/116548835083550863516"
+            weight	   : 60
 
 # ----------------------------------------------------------------------

@@ -4,9 +4,8 @@
 <head>
 	<meta  charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.9" />
-	{{- with .Site.Params.description -}}
-		<meta name="description" content="{{- . -}}">
-	{{- end -}}
+	{{- with .Site.Params.description -}}<meta name="description" content="{{- . -}}">{{- end -}}
+	{{- with .Site.Params.keywords -}}<meta name="keywords" content="{{- . -}}">{{- end -}}
 
 	{{ template "_internal/google_analytics.html" . }}
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon"/>

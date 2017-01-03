@@ -7,6 +7,7 @@ defaultContentLanguage : "de-DE"
 theme 			       : "flashpixx"
 title                  : "flashpixx.de"
 enableEmoji            : true
+enableRobotsTXT        : true
 googleAnalytics		   : "UA-4509379-1"
 
 permalinks:

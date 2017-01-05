@@ -20,7 +20,7 @@ taxonomies:
 
 
 params:
-    name 			   : "flashpixx.de"
+    owner			   : "Philipp Kraus"
     description 	   : "Developing of AI and Big-Data technologies"
     keywords           : "AI, Developing, Big-Data, Machine-Learning"
     socialmedia 	   :

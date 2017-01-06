@@ -12,6 +12,7 @@
 !*.css
 !*.js
 !*.svg
+!*.xml
 
 # ignore generated files
 public/**

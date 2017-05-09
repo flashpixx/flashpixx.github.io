@@ -13,6 +13,8 @@
 !*.js
 !*.svg
 !*.xml
+!*.sh
+!*.config
 
 # ignore generated files
 public/**

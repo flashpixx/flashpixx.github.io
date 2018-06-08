@@ -23,7 +23,7 @@ dependencies:
         - wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.38.2/hugo_0.38.2_Linux-64bit.deb
         - sudo dpkg -i hugo.deb
         # see relese version https://github.com/nodesource/distributions
-        - "curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash"
+        - "curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash"
         - sudo apt-get install -y nodejs
         # see release version https://github.com/kangax/html-minifier
         - npm install -g html-minifier

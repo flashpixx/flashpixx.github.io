@@ -58,7 +58,7 @@ deployment:
             - rm -Rf *
             - mv -f /tmp/public/* .
             - echo -e 'general:\n    branches:\n        ignore:\n            - master\n' > circle.yml
-            - echo -e '*.*\n!.gitignore\n!circle.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.json\n!*.bib\n!*.zip\n!*.png\n!*.gif\n!*.pdf\n!*.svg\n!*.txt\n' > .gitignore
+            - echo -e '*.*\n!.gitignore\nCNAME\n!circle.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.json\n!*.png\n!*.gif\n!*.pdf\n!*.svg\n!*.jpg\n' > .gitignore
             - echo -e '# flashpixx.de\n\nCurrent website of the [flashpixx.de](http://flashpixx.de)' > readme.md
             - git add --all .
             - export GIT_COMMIT_MESSAGE="$(git show -s --pretty=format:%s $CIRCLE_SHA1)" && git commit -m "webpage update [$GIT_COMMIT_MESSAGE]"

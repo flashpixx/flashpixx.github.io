@@ -9,10 +9,12 @@
 !*.html
 !*.md
 !*.json
-!*.bib
 !*.css
 !*.js
 !*.svg
+!*.png
+!*.jpg
+!*.gif
 !*.xml
 !*.sh
 !*.config

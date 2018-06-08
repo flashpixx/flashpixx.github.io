@@ -1,7 +1,7 @@
 # --- main configuration -------------------------------------------
 # see http://www.emoji-cheat-sheet.com/
 
-baseurl		 	       : "https://flashpixx.de/"
+baseurl		 	       : "https://flashpixx.github.io/"
 ignoreFiles            : [ "\\.graffle$", "\\.sh$", "\\.config" ]
 metadataformat		   : "yaml"
 defaultContentLanguage : "en"     

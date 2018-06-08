@@ -85,6 +85,11 @@ ul.horizontal li {
     text-align: center;
 }
 
+section {
+    height: 100vh;
+    overflow: auto;
+}
+
 .content_data { 
     display: flex; 
     flex-direction: column; 

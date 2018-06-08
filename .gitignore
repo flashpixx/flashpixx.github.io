@@ -1,6 +1,7 @@
 *.*
 !.gitignore
 !.hidden
+!CNAME
 !*.toml
 !*.txt
 !*.yml

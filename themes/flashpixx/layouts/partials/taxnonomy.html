@@ -1,19 +1,18 @@
 {{- range $name, $taxonomy := .Site.Taxonomies -}}
 	{{- $id := replaceRE "[[:^alnum:]]" "" ($name | lower) | safeCSS -}}
 
-	<section id="content_{{- $id -}}" class="content" data-section-name="page_{{- $id -}}">
-	<div class="content_data">	
-	<h1>{{- $name | humanize -}}</h1>
-	
-	{{- range sort (where $.Site.Pages ".Section" "eq" $name) ".Date" "desc" -}}
-	<div class="post">
-	{{- if not .Date.IsZero -}}
-	<strong>{{- .Date.Format "Mon, Jan 2, 2006" }}</strong> 
-	{{- end -}}
-	{{- .Content -}}
-	</div>
-	{{- end -}}
+	<section id="page_{{- $id -}}" class="content">
+		<div class="content_data">	
+			<h1>{{- $name | humanize -}}</h1>
+			
+			{{- range sort (where $.Site.Pages ".Section" "eq" $name) ".Date" "desc" -}}
+				{{ with .Content }}
+				<div class="post">
+					{{- . -}}
+				</div>
+				{{- end -}}
+			{{- end -}}
 
-	</div>
+			</div>
 	</section>
 {{- end -}}

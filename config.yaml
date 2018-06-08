@@ -1,9 +1,10 @@
 # --- main configuration -------------------------------------------
 # see http://www.emoji-cheat-sheet.com/
 
-baseurl		 	       : "https://flashpixx.github.io/"
+baseurl		 	       : "https://flashpixx.de/"
+ignoreFiles            : [ "\\.graffle$", "\\.sh$", "\\.config" ]
 metadataformat		   : "yaml"
-defaultContentLanguage : "de-DE"     
+defaultContentLanguage : "en"     
 theme 			       : "flashpixx"
 title                  : "flashpixx.de"
 enableEmoji            : true
@@ -11,18 +12,18 @@ enableRobotsTXT        : true
 googleAnalytics		   : "UA-4509379-1"
 
 permalinks:
-    news               : "/:section/:filename"
     projekt            : "/:section/:filename" 
 
 taxonomies:
-    news               : "news"
-    projekt            : "projekte"
+    projekt            : "projects"
 
 
 params:
     owner			   : "Philipp Kraus"
     description 	   : "Developing of AI and Big-Data technologies"
     keywords           : "AI, Developing, Big-Data, Machine-Learning"
+    date_format        : "2006-01-02"
+    bingverify         : "2EB13C5538E9973D8DFC39C6A455DEFE"
     socialmedia 	   :
         -
             name	   : "mail"
@@ -31,26 +32,38 @@ params:
         -
             name	   : "github"
             url	       : "http://github.com/flashpixx"
-            weight	   : 10
+            weight	   : 10            
+        -
+            name	   : "gitlab"
+            url	       : "https://gitlab.com/flashpixx"
+            weight	   : 20            
+        -
+            name	   : "docker"
+            url	       : "https://hub.docker.com/u/flashpixx/"
+            weight	   : 30
         -
             name	   : "linkedin"
             url 	   : "http://www.linkedin.com/in/philipp-kraus"
-            weight	   : 20
+            weight	   : 40
         -
             name	   : "xing"
             url        : "http://xing.to/philippkraus"
-            weight	   : 30
+            weight	   : 50
         -
             name	   : "twitter"
             url		   : "http://twitter.com/flashpixx"
-            weight	   : 40
+            weight	   : 60
+        -
+            name	   : "vimeo"
+            url		   : "https://vimeo.com/user84670997"
+            weight	   : 70    
         -
             name 	   :  "facebook"
             url 	   : "https://www.facebook.com/philipp.kraus"
-            weight	   : 50
+            weight	   : 80
         -
             name	   : "googleplus"
             url	       : "https://plus.google.com/116548835083550863516"
-            weight	   : 60
+            weight	   : 90
 
 # ----------------------------------------------------------------------

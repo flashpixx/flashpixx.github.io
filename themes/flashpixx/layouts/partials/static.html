@@ -1,9 +1,9 @@
 {{- range where .Site.Pages "Type" "static" -}}
 	{{- $id := replaceRE "[[:^alnum:]]" "" (.File.BaseFileName | lower) | safeCSS -}}
-	<section id="content_{{- $id -}}" class="content" data-section-name="page_{{- $id -}}">
-	<div class="content_data">	
-	<h1>{{- .Title -}}</h1>
-	{{- .Content -}}
-	</div>
+	<section id="page_{{- $id -}}" class="content">
+		<div class="content_data">	
+		<h1>{{- .Title -}}</h1>
+		{{- .Content -}}
+		</div>
 	</section>
 {{- end -}}

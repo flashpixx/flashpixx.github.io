@@ -1,29 +1,29 @@
-<section class="content" id="content_root" data-section-name="page_root">
-<div class="content_data">
-    <span id="title">{{- .Title -}}</span>
+<section class="content_main page1">
+    <div>
+        <span id="title">{{- .Title -}}</span>
 
-    <span id="socialmedia">
-        <ul class="horizontal">
-            {{- range sort .Site.Params.socialmedia "weight" }}
-            <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" alt="{{- .name -}}" class="socialmedia" /></a></li>
-            {{- end -}}
-            <li><a href="/news/index.xml"><img src="/images/rss.svg" alt="rss" class="socialmedia" /></a></li>
-        </ul>    
-    </span>
+        <span id="socialmedia">
+            <ul class="horizontal">
+                {{- range sort .Site.Params.socialmedia "weight" }}
+                <li><a href="{{- .url -}}"><img src="/images/{{- .name -}}.svg" alt="{{- .name -}}" class="socialmedia" /></a></li>
+                {{- end -}}
+                <li><a href="/news/index.xml"><img src="/images/rss.svg" alt="rss" class="socialmedia" /></a></li>
+            </ul>    
+        </span>
 
-    <span id="menu">
-        <ul class="horizontal">
-            {{- range $name, $taxonomy := .Site.Taxonomies -}}
-            {{- $id := replaceRE "[[:^alnum:]]" "" ($name | lower) | safeCSS -}}
-            <li><a class="menulink" href="#page_{{- $id -}}">{{- $name | humanize -}}</a></li>
-            {{- end -}}
+        <span id="menu">
+            <ul class="horizontal">
+                {{- range $name, $taxonomy := .Site.Taxonomies -}}
+                {{- $id := replaceRE "[[:^alnum:]]" "" ($name | lower) | safeCSS -}}
+                <li><a class="menulink" href="#" data-pageid="page_{{- $id -}}">{{- $name | humanize -}}</a></li>
+                {{- end -}}
 
-            {{- range where .Site.Pages "Type" "static" -}}
-            {{- $id := replaceRE "[[:^alnum:]]" "" (.File.BaseFileName | lower) | safeCSS -}}
-            <li><a class="menulink" href="#page_{{- $id -}}">{{- .Title -}}</a></li>
-            {{- end -}}
-        </ul>    
-    </span>
-</div>
-<span id="generatedate">{{ .Now.Format "Jan 2006" -}}</span>
+                {{- range where .Site.Pages "Type" "static" -}}
+                {{- $id := replaceRE "[[:^alnum:]]" "" (.File.BaseFileName | lower) | safeCSS -}}
+                <li><a class="menulink" href="#" data-pageid="page_{{- $id -}}">{{- .Title -}}</a></li>
+                {{- end -}}
+            </ul>    
+        </span>
+    </div>
+    <span id="generatedate">{{ now.Format .Site.Params.date_format -}}</span>
 </section>

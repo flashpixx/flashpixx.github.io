@@ -1,32 +1,47 @@
 ---
-title: "Qualifikation & Kenntisse"
+title: "Qualification & Knowledge"
 type: "static"
 weight: 80
 ---
-## Abschlüsse und Zertifikate:
+## Degrees and Certificates
 
-* Ausbildung & Berufszeit: Fachinformatiker Anwendungsentwickler [IHK Koblenz](https://www.ihk-koblenz.de/) mit [Cisco CCNA](https://en.wikipedia.org/wiki/CCNA) Qualifikation
-* Diplom theoretischer Informatiker mit Schwerpunkt mathematische Optimierung, Machine Learning und Big Data & High-Scalibility [TU-Clausthal](http://www.tu-clausthal.de/)
-* aktuell: Promotion im Bereich künstliche Intelligenz ([TU Clausthal - Mobile and Enterprise Computing](http://meclab.in.tu-clausthal.de/))
-* Hochschulzertifikation im Bereich Lehre: Präsentation, Rhetorik, Lehr- und Tutorenbetreuung
-* Nebenberufliche Arbeit seit 2002 als Software-Entwickler
+* PhD in Artificial Intelligence (TU Clausthal [Mobile and Enterprise Computing](http://meclab.in.tu-clausthal.de/) und [Model-based system analysis and simulation](https://www.in.tu-clausthal.de/abteilungen/modellbasierte-systemanalyse-und-simulation/)) in current research projects
+    * [LightJason](https://lightjason.org/) 
+    * [DAIMON](http://www.daimonproject.com/)
+    * [SocialCars](https://www.socialcars.org/home.html)
 
-## aktuelle verwendete Technologien
+* University certification in the field of teaching, presentation, rhetoric, teaching and tutoring support
 
-* OS: OS X, Linux, Windows
-* Java (1.8) Entwicklung: Streams, [Hadoop](https://de.wikipedia.org/wiki/Apache_Hadoop) (HBase, Twill, Spark, Yarn), [AntLR](https://de.wikipedia.org/wiki/ANTLR), [Maven](https://de.wikipedia.org/wiki/Apache_Maven), [Gradle](https://de.wikipedia.org/wiki/Gradle), [LibGDX](https://de.wikipedia.org/wiki/LibGDX), [Jetty](https://de.wikipedia.org/wiki/Jetty_(Webserver)), [Jersey](https://jersey.java.net/), [Jaxb](https://de.wikipedia.org/wiki/Java_Architecture_for_XML_Binding), [XSD](https://de.wikipedia.org/wiki/XML_Schema), [XSLT](https://de.wikipedia.org/wiki/XSL_Transformation)
-* C/C++ (11 & 14): [Boost](https://de.wikipedia.org/wiki/Boost_(C%2B%2B-Bibliothek)), [LAPack](https://de.wikipedia.org/wiki/LAPACK), [OpenMPI](https://en.wikipedia.org/wiki/Open_MPI)
-* [Git](https://de.wikipedia.org/wiki/Git), [Prolog](https://de.wikipedia.org/wiki/Prolog_(Programmiersprache)), [R](https://de.wikipedia.org/wiki/R_(Programmiersprache)), [LaTeX](https://de.wikipedia.org/wiki/LaTeX), [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)
+* German Diploma in theoretical computer science with focus on mathematical optimization, machine learning and big data & high scalability (TU-Clausthal)
 
-## weitere Kenntnisse
+* Apprenticeshipn & Career: IT Specialist Application Developer [IHK Koblenz](https://www.ihk-koblenz.de/) with [Cisco CCNA](https://en.wikipedia.org/wiki/CCNA)
 
-* [Free Pascal](https://de.wikipedia.org/wiki/Free_Pascal) / [Borland Turbo Pascal](https://de.wikipedia.org/wiki/Turbo_Pascal) / [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language))
-* [Matlab](https://de.wikipedia.org/wiki/Matlab), [GAP (System for Computational Discrete Algebra)](https://en.wikipedia.org/wiki/GAP_(computer_algebra_system))
-* [jQuery](https://de.wikipedia.org/wiki/JQuery), [jQuery-UI](https://de.wikipedia.org/wiki/JQuery_UI), [PHP](https://de.wikipedia.org/wiki/PHP), [JavaScript](https://de.wikipedia.org/wiki/JavaScript), [Node.JS](https://de.wikipedia.org/wiki/Node.js), [Perl](https://de.wikipedia.org/wiki/Perl_(Programmiersprache)), [Cascading Style Sheets](https://de.wikipedia.org/wiki/Cascading_Style_Sheets), [(X)HTML](https://de.wikipedia.org/wiki/Extensible_Hypertext_Markup_Language)
-* [Microsoft Navision (Attain)](https://de.wikipedia.org/wiki/Microsoft_Dynamics_NAV) / [Dynamics](https://de.wikipedia.org/wiki/Microsoft_Dynamics), [Microsoft FoxPro](https://de.wikipedia.org/wiki/Microsoft_Visual_FoxPro), [Microsoft VisualBasic](https://de.wikipedia.org/wiki/Visual_Basic_.NET)
-* [Lua](https://de.wikipedia.org/wiki/Lua), [Qt](https://de.wikipedia.org/wiki/Qt_(Bibliothek)), [SOAP](https://de.wikipedia.org/wiki/SOAP), [RMI](https://de.wikipedia.org/wiki/SOAP), [Mercurial](https://de.wikipedia.org/wiki/Mercurial), [Subversion](https://de.wikipedia.org/wiki/Apache_Subversion), Applescript
-* [Borland Database Engine (BDE)](https://de.wikipedia.org/wiki/Borland_Database_Engine), [Redis](https://de.wikipedia.org/wiki/Redis), [MongoDB](https://de.wikipedia.org/wiki/MongoDB), Microsoft Access, Microsoft SQL, [MySQL](https://de.wikipedia.org/wiki/MySQL), [PostgreSQL](https://de.wikipedia.org/wiki/PostgreSQL), [SQLite](https://de.wikipedia.org/wiki/SQLite), [Hierarchical Data Format](https://de.wikipedia.org/wiki/Hierarchical_Data_Format)
-* [SCons](https://de.wikipedia.org/wiki/SCons), [Makefiles](https://de.wikipedia.org/wiki/Make), [Crystal Reports](https://de.wikipedia.org/wiki/Crystal_Reports)
-* MSYS / MinGW, [Scrum](https://de.wikipedia.org/wiki/Scrum)
-* [Apache](https://de.wikipedia.org/wiki/Apache_HTTP_Server), [nginx](https://de.wikipedia.org/wiki/Nginx), [OpenLDAP](https://de.wikipedia.org/wiki/OpenLDAP), [Postfix](https://de.wikipedia.org/wiki/Postfix_(Mail_Transfer_Agent)), [Wordpress](https://de.wikipedia.org/wiki/WordPress), [Wordpress Entwicklung](https://profiles.wordpress.org/flashpixx)
+* Part-time work since 2002 as software developer
 
+## Technologies and Knowledge
+
+* OS: OS X, Linux (Debian, Ubuntu, Gentoo, FreeBSD, SuSE), Windows
+
+* [IoT Mozilla Things](https://iot.mozilla.org/) 
+
+* Java: [Sprint-Boot](https://spring.io/), [AntLR](http://www.antlr.org/), [Hadoop Twill](http://twill.apache.org/), [Maven](https://maven.apache.org/), [Gradle](https://gradle.org/), [LibGDX](https://libgdx.badlogicgames.com/), [Jetty](https://www.eclipse.org/jetty/), [Jersey](https://jersey.github.io/), [Jaxb](https://docs.oracle.com/javase/tutorial/jaxb/)
+
+* C/C++ (11 & 14): [Boost](https://www.boost.org/), [LAPack](http://www.netlib.org/lapack/), [MPICH](https://www.mpich.org/), [Qt](https://www.qt.io/)
+
+* [R](https://www.r-project.org/), [R Shiny](https://shiny.rstudio.com/), [SWI-Prolog](http://www.swi-prolog.org/), [Matlab](https://mathworks.com/products/matlab.html), [Lua](https://www.lua.org/), [LaTeX](https://www.tug.org/texlive/) 
+
+* [MongoDB](https://www.mongodb.com/), [Redis](https://redis.io/), [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/) & [PostGIS](https://postgis.net/), [SQLite](https://www.sqlite.org/index.html), [Hierarchical Data Format](https://support.hdfgroup.org/HDF5/), Microsoft Access, Microsoft SQL
+
+* [jQuery](https://jquery.com/), [jQuery-UI](https://jqueryui.com/), [Bootstrap](https://getbootstrap.com/), [PHP](http://php.net/), [React](https://reactjs.org/), [GraphQL](https://graphql.org/), [Phaser.io](http://phaser.io/)
+
+* [Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/), [Subversion](https://subversion.apache.org/)
+
+* [Node.JS](https://nodejs.org/), [Apache](https://httpd.apache.org/), [Nginx](https://nginx.org/), [OpenLDAP](https://www.openldap.org/), [Postfix](http://www.postfix.org/)
+
+* [Microsoft Navision (Attain) / Dynamics](https://en.wikipedia.org/wiki/Microsoft_Dynamics_NAV), [Microsoft FoxPro](https://en.wikipedia.org/wiki/Visual_FoxPro), [Crystal Reports](http://www.crystalreports.com/)
+
+* [Free Pascal](https://www.freepascal.org/) / [Borland Turbo Pascal](https://en.wikipedia.org/wiki/Turbo_Pascal) / [Delphi](https://en.wikipedia.org/wiki/Object_Pascal), [MinGW](http://www.mingw.org/) / [MSYS](http://www.mingw.org/wiki/msys)
+
+* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer), [SOAP](https://en.wikipedia.org/wiki/SOAP), [RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation)
+
+* [SCons](https://scons.org/), [Makefiles](https://en.wikipedia.org/wiki/Make_(software))

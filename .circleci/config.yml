@@ -52,6 +52,8 @@ jobs:
             - run: npm install -g svgo
             # see release version https://www.npmjs.com/package/uglify-es
             - run: npm install -g uglify-es
+            # add github.com ssh-key
+            - run: if [ ! -n "$(grep "^github.com " ~/.ssh/known_hosts)" ]; then ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null; fi
             #
             # --- attach workspace ---
             - attach_workspace:

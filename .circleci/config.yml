@@ -52,9 +52,6 @@ jobs:
             - run: npm install -g svgo
             # see release version https://www.npmjs.com/package/uglify-es
             - run: npm install -g uglify-es
-            # add github.com ssh-key
-            - run: mkdir .ssh
-            - run: echo -e "github.com,206.97.227.239 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> .ssh/known_hosts 
             #
             # --- attach workspace ---
             - attach_workspace:
@@ -84,7 +81,7 @@ jobs:
             - run: export GIT_COMMIT_MESSAGE="$(git show -s --pretty=format:%s $CIRCLE_SHA1)" && git commit -m "webpage update [$GIT_COMMIT_MESSAGE]"
             - add_ssh_keys:
                 fingerprints:
-                    - "1b:2f:f6:d1:0a:60:aa:79:7c:33:de:32:05:fd:12:6e"
+                    - "67:09:60:f6:75:32:35:16:96:5e:e5:a5:d1:8b:43:a8"
             - run: git push -f origin master
 
 workflows:

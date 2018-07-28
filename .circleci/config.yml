@@ -1,0 +1,97 @@
+version: 2
+
+jobs:
+
+    build:
+        docker:
+            - image: ubuntu:latest
+
+        environment:
+            TZ: "/usr/share/zoneinfo/Europe/Berlin"
+
+        steps:
+            # --- installation software ---
+            - run: apt-get update
+            - run: apt-get -y install wget git
+            - run: wget -O /tmp/hugo.deb  https://github.com/gohugoio/hugo/releases/download/v0.45.1/hugo_0.45.1_Linux-64bit.deb
+            - run: dpkg -i /tmp/hugo.deb
+            #
+            # --- git checkout ---
+            - checkout
+            - run: git clean -xdf
+            - run: git fetch -p
+            - run: git gc --prune=now
+            #
+            # --- build & persistent workspace ---
+            - run: hugo --ignoreCache --cleanDestinationDir
+            - persist_to_workspace:
+                root: .
+                paths:
+                    - .
+
+    deploy:
+        docker:
+            - image: ubuntu:latest
+
+        environment:
+            TZ: "/usr/share/zoneinfo/Europe/Berlin"
+            GIT_AUTHOR_NAME: CircleCI
+            GIT_AUTHOR_EMAIL: info@flashpixx.de
+            GIT_COMMITTER_NAME: CircleCI
+            GIT_COMMITTER_EMAIL: info@flashpixx.de
+
+        steps:
+            # --- installation software ---
+            - run: apt-get update
+            - run: apt-get -y install curl git gnupg
+            - run: curl -sL https://deb.nodesource.com/setup_10.x | bash
+            - run: apt-get install -y nodejs
+            # see release version https://www.npmjs.com/package/html-minifier
+            - run: npm install -g html-minifier
+            # see release version https://www.npmjs.com/package/svgo
+            - run: npm install -g svgo
+            # see release version https://www.npmjs.com/package/uglify-es
+            - run: npm install -g uglify-es
+            #
+            # --- attach workspace ---
+            - attach_workspace:
+                at: .
+            #
+            # --- build deployment version ---
+            - run: svgo --multipass --config=data/svgo.config public/images/ || true
+            - run: find public -type f -name "*.htm*" -exec data/minify.sh \{\} \;
+            - run: find public -type f -name "*.css" -exec data/minify.sh \{\} \;
+            - run: find public -type f -name "*.js" -exec data/minifyjs.sh \{\} \;
+            - run: mv -f public /tmp
+            #
+            # --- store artifact ---
+            - run: cd /tmp/public && tar cvfj /tmp/site.tar.bz2 *
+            - store_artifacts:
+                path: /tmp/site.tar.bz2
+            #
+            # --- deploy ---
+            - run: rm -Rf *
+            - run: mv -f /tmp/public/* .
+            - run: echo -e 'general:\n    branches:\n        ignore:\n            - master\n' > circle.yml
+            - run: echo -e '*.*\n!.gitignore\n!CNAME\n!circle.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.png\n!*.svg\n!*.jpg\n' > .gitignore
+            - run: echo -e '# flashpixx.de\n\nCurrent website of the [flashpixx](https://flashpixx.de)' > readme.md
+            - run: git brach -D master || true       
+            - run: git checkout --orphan master
+            - run: git add --all .
+            - run: export GIT_COMMIT_MESSAGE="$(git show -s --pretty=format:%s $CIRCLE_SHA1)" && git commit -m "webpage update [$GIT_COMMIT_MESSAGE]"
+            - add_ssh_keys:
+                fingerprints:
+                    - "1b:2f:f6:d1:0a:60:aa:79:7c:33:de:32:05:fd:12:6e"
+            - run: git push -f origin master
+
+workflows:
+    version: 2
+    build-and-deploy:
+        jobs:
+            - build:
+                filters:
+                    branches:
+                        only: developing
+            - deploy:
+                requires:
+                    - build

@@ -1,7 +1,7 @@
 #!/bin/zsh -e
 
-MINIFY=$(which minify)
+MINIFY=$(which uglifyjs)
 
 TMP=$(mktemp)
-$MINIFY --no-comments --output $TMP $1
+$MINIFY -c -o $TMP -- $1  
 mv -f $TMP $1

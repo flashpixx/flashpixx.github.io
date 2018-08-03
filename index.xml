@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flashpixx.de</title>
+    <link>https://flashpixx.de/</link>
+    <description>Recent content on flashpixx.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 01 Jan 2018 19:30:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://flashpixx.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qualification &amp; Knowledge</title>
+      <link>https://flashpixx.de/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flashpixx.de/experience/</guid>
+      <description>Degrees and Certificates  PhD in Artificial Intelligence (TU Clausthal Mobile and Enterprise Computing und Model-based system analysis and simulation) in current research projects  LightJason DAIMON SocialCars  University certification in the field of teaching, presentation, rhetoric, teaching and tutoring support German Diploma in theoretical computer science with focus on mathematical optimization, machine learning and big data &amp;amp; high scalability (TU-Clausthal) Apprenticeshipn &amp;amp; Career: IT Specialist Application Developer IHK Koblenz with Cisco CCNA Part-time work since 2002 as software developer  Technologies and Knowledge  OS: OS X, Linux (Debian, Ubuntu, Gentoo, FreeBSD, SuSE), Windows IoT Mozilla Things Java: Sprint-Boot, AntLR, Hadoop Twill, Maven, Gradle, LibGDX, Jetty, Jersey, Jaxb C/C++ (11 &amp;amp; 14): Boost, LAPack, MPICH, Qt R, R Shiny, SWI-Prolog, Matlab, Lua, LaTeX MongoDB, Redis, MySQL, PostgreSQL &amp;amp; PostGIS, SQLite, Hierarchical Data Format, Microsoft Access, Microsoft SQL jQuery, jQuery-UI, Bootstrap, PHP, React, GraphQL, Phaser.</description>
+    </item>
+    
+    <item>
+      <title>Imprint</title>
+      <link>https://flashpixx.de/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flashpixx.de/imprint/</guid>
+      <description>Disclaimer: Despite careful content control, we assume no liability for the content of external links.  The operators of the linked pages are solely responsible for their content.  Responsible for content according to § 55 Abs. 2 RStV  Philipp Kraus Tannenhöhe 27 D-38678 Clausthal-Zellerfeld  Telefon: (+49) 170 - 20 67 522 GPG Schlüssel: 28DAD71AD1473E7F
+  All works and content are licensed under a Creative Commons-Lizenz lizenziert , unless otherwise stated.</description>
+    </item>
+    
+    <item>
+      <title>Amucad</title>
+      <link>https://flashpixx.de/projects/amucad/</link>
+      <pubDate>Mon, 01 Jan 2018 19:30:33 +0200</pubDate>
+      
+      <guid>https://flashpixx.de/projects/amucad/</guid>
+      <description>Within the research project DAIMON the web application Amucad is extended by corresponding functionality. The application of the company Egeos will be extended on different levels such as 3D molecular representation of chemical warfare agents, analysis of chemical compositions of warfare agents with visual representation, compounds with corresponding measurement data. The technologies used here are Postgresql with PostGIS, React, Geoserver, Docker and Node.JS</description>
+    </item>
+    
+    <item>
+      <title>Text Mining - Grouping</title>
+      <link>https://flashpixx.de/projects/textmininggrouping/</link>
+      <pubDate>Wed, 20 Dec 2017 19:30:33 +0200</pubDate>
+      
+      <guid>https://flashpixx.de/projects/textmininggrouping/</guid>
+      <description>A more leisure project is the text mining-grouping than R Shiny application. The source code is an R application that uses the normalized compression distance to convert the text data into a distance matrix and then uses the affinity propagation to convert it into a visual representation. The idea for this procedure was generated from the project SocialCars in order to get a visual impression of the different research projects and their relationship to each other on the basis of the textual representation.</description>
+    </item>
+    
+    <item>
+      <title>Traffic Simulation</title>
+      <link>https://flashpixx.de/projects/trafficsimulation/</link>
+      <pubDate>Fri, 01 Apr 2016 19:30:33 +0200</pubDate>
+      
+      <guid>https://flashpixx.de/projects/trafficsimulation/</guid>
+      <description>Since the project work focused on traffic simulation, the application examples in this area were designed. In all cases a microsimulation was constructed, especially for pedestrians a crowd simulation was constructed. Two projects have been created, but they will not be developed any further
+ MecSim is a simple traffic simulation based on the Nagel-Schreckenberg follow-up vehicle model with the attempt to connect the platform Jason as an AI application. Since integration was not possible due to the system architecture, the projectLightJason was started, which meets the requirements due to a different architecture.</description>
+    </item>
+    
+    <item>
+      <title>PhD - LightJason</title>
+      <link>https://flashpixx.de/projects/lightjason/</link>
+      <pubDate>Thu, 01 Oct 2015 19:30:33 +0200</pubDate>
+      
+      <guid>https://flashpixx.de/projects/lightjason/</guid>
+      <description>The research project LightJason will be the result of my PhD in the field of multi-agent systems. Multi-agent systems are an area of (weak) artificial intelligence. The goal of this work is to human behavior in software and to use AI algorithms. The concept of Agent should represent a single individual or a part of the individual.
+Since such systems are initially designed using classical logic, one goal of my work was the application of unsharp structures as fuzzy logic.</description>
+    </item>
+    
+  </channel>
+</rss>

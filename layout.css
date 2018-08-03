@@ -1,0 +1,171 @@
+body {
+    font-family: Lato, Helvetica, sans-serif;
+	font-size: 18px;
+    background: #fff;
+    color: #000;
+}
+
+a {
+    color: #3790BE;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #3790BE;
+    text-decoration: underline;
+}
+
+h1 { font-size: 200%; border-bottom: 2px solid #ddd; }
+h2 { font-size: 170%; }
+h3 { font-size: 150%; }
+h4 { font-size: 130%; }
+h5, h6 { font-size: 100%; }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ddd;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote:before {
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+svg {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+img
+{
+    vertical-align: middle;
+}
+
+img[src$='#centering'] {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+img[src$='#floatleft'] {
+	float: left;
+}
+
+img[src$='#floatright'] {
+	float: right;
+}
+
+ul.horizontal {
+    padding: 0;
+}
+
+ul.horizontal li {
+    display: inline;
+	padding: 0.75em;
+}
+
+
+
+.content
+{
+    margin: 0;    
+    text-align: justify;
+}
+
+#content_root
+{
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    overflow: auto;
+}
+
+.content_data { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 80%; 
+}
+
+#title
+{
+	font-size: 475%;
+    font-weight: 900;
+
+}
+
+#menu
+{
+    font-size: 90%;    
+}
+
+#generatedate
+{
+    position: absolute;
+    bottom: 0.25em;
+    right: 0.5em;
+    color: #999;
+    font-size: 85%;
+}
+
+.post
+{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    display:list-item;
+}
+
+.socialmedia
+{
+	width: 40px;
+	height: auto;
+}
+
+
+.content_main
+{
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 99%;
+    width: 100%;
+}
+
+.footnotes
+{
+	font-size: 75%;
+}
+
+@media print
+{
+    #generatedate
+    {
+        display: none;
+    }
+
+    section
+    {
+        page-break-after: always;
+    }
+
+    .content_data
+    {
+        height: auto;
+        page-break-after: avoid; 
+        overflow: hidden;
+    }
+}

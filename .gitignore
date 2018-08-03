@@ -1,0 +1,14 @@
+*.*
+!.gitignore
+!.circleci
+!CNAME
+!robots.txt
+!config.yml
+!*.html
+!*.xml
+!*.css
+!*.js
+!*.png
+!*.svg
+!*.jpg
+

@@ -76,8 +76,7 @@ jobs:
             # --- deploy ---
             - run: rm -Rf *
             - run: mv -f /tmp/public/* .
-            - run: echo -e 'general:\n    branches:\n        ignore:\n            - master\n' > circle.yml
-            - run: echo -e '*.*\n!.gitignore\n!CNAME\n!circle.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.png\n!*.svg\n!*.jpg\n' > .gitignore
+            - run: echo -e '*.*\n!.gitignore\n!.circleci\n!CNAME\n!config.yml\n!*.html\n!*.xml\n!*.css\n!*.js\n!*.png\n!*.svg\n!*.jpg\n' > .gitignore
             - run: echo -e '# flashpixx.de\n\nCurrent website of the [flashpixx](https://flashpixx.de)' > readme.md
             - run: git brach -D master || true       
             - run: git checkout --orphan master
